@@ -1,0 +1,16 @@
+<h1>Edit properties for <%= @cars.model %></h1>
+
+<p>Manufacturer: <%= @cars.manufacturer %> </p>
+<p>Model: <%= @cars.model%> </p>
+<p>Mileage: <%= @cars.mileage%> </p>
+<p>Registration Year: <%= @cars.registration_year%> </p>
+<p>Daily Rental Rate: <%= @cars.daily_rental_rate%> </p>
+<p>Rented: <%= @cars.rented%> </p>
+<p> <img src="<%= @cars.car_image %>"> </p>
+<hr>
+
+<p> <a href="/cars/<%= @cars.id %>/edit">Edit Car</a> </p>
+
+<form action="/cars/<%= @cars.id %>/delete" method="POST">
+  <input type="submit" name="delete" value="Delete Car">
+</form>

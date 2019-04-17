@@ -1,0 +1,11 @@
+<h1>Rental Records</h1>
+
+<p>Customer: <%= @customer.first_name %> <%= @customer.second_name %> </p>
+<p>Car: <%= @car.manufacturer %> - <%= @car.model %> </p>
+<hr>
+
+<p> <a href="/rentals/<%= @rental.id %>/edit">Edit Rental</a> </p>
+
+<form action="/rentals/<%= @rental.id %>/delete" method="POST">
+  <input type="submit" name="delete" value="Delete Rental">
+</form>

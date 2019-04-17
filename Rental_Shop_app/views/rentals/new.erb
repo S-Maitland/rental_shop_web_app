@@ -1,0 +1,21 @@
+<form action="/rentals" method="post">
+
+  <select name="customer_id" id="customers">
+    <option selected="selected" selection disabled>Select A Customer</option>
+    <% @customers.each do |customer| %>
+      <option value="<%= customer.id%>"><%= customer.first_name %> <%= customer.second_name %></option>
+    <% end %>
+  </select>
+
+  <select name="car_id" id="cars">
+    <option selected="selected" selection disabled>Select A Car</option>
+    <% @cars.each do |car| %>
+      <% if car.rented != "t" %>
+        <option value="<%= car.id%>"> <%= car.manufacturer %> - <%= car.model %></option>
+      <% end %>
+    <% end %>
+  </select>
+
+<input type="submit" value="Submit Rental">
+
+</form>

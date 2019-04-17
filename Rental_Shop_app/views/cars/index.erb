@@ -1,0 +1,30 @@
+
+<h1>Codeclan's Car Base</h1>
+<p>Below is a list of all the entries to your cars database.</p>
+
+<a href="/cars/new">New Car</a>
+
+<table class="cars_table">
+    <tr>
+    <th>Car ID</th>
+    <th>Manufacturer</th>
+    <th>Model</th>
+    <th>Mileage</th>
+    <th>Registration Year</th>
+    <th>Daily Rental Rate</th>
+    <th>Rented</th>
+  </tr>
+
+  <tr>
+  <%@cars.each do |car|%>
+  <td><%= car.id %> </td>
+  <td><%= car.manufacturer %></td>
+  <td><%= car.model %></td>
+  <td><%= car.mileage %></td>
+  <td><%= car.registration_year %></td>
+  <td><%= car.daily_rental_rate %></td>
+  <td><%= car.rented %></td>
+  <td><a href="/cars/<%= car.id %>">View Car</a></td>
+</tr>
+<% end %>
+</table>

@@ -1,0 +1,18 @@
+
+<h1>Codeclan's Rental Records</h1>
+<p>Below is a list of all the entries to your rentals database.</p>
+
+<a href="/rentals/new">New Rental</a>
+
+<table class="rentals_table">
+  <tr>
+    <th>Rental ID</th>
+  </tr>
+
+  <tr>
+  <%@rentals.each do |rental|%>
+  <td><%= rental.id %></td>
+  <td><a href="/rentals/<%= rental.id %>">View Rental</a></td>
+</tr>
+<% end %>
+</table>

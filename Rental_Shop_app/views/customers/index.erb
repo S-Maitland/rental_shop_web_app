@@ -1,0 +1,24 @@
+
+<h1>Codeclan's Customer Base</h1>
+<p>Below is a list of all the entries to your customers database.</p>
+
+<a href="/customers/new">New Customer</a>
+
+<table class="customers_table">
+  <tr>
+    <th>Customer ID</th>
+    <th>First Name</th>
+    <th>Second Name</th>
+    <th>Customer Age</th>
+  </tr>
+
+  <tr>
+  <%@customers.each do |customer|%>
+  <td><%= customer.id %> </td>
+  <td><%= customer.first_name %></td>
+  <td><%= customer.second_name %></td>
+  <td><%= customer.age %></td>
+  <td><a href="/customers/<%= customer.id %>">View Customer</a></td>
+</tr>
+<% end %>
+</table>

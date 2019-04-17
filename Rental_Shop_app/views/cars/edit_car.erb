@@ -1,0 +1,25 @@
+<form action="/cars/<%= @cars.id %>" method="post">
+<br>
+  <label for="manufacturer">Manufacturer:</label>
+  <input type="text" name="manufacturer" value="<%= @cars.manufacturer %>">
+<br>
+  <label for="model">Model:</label>
+  <input type="text" name="model" value="<%= @cars.model %>">
+<br>
+  <label for="mileage">Mileage:</label>
+  <input type="number" name="mileage" value="<%= @cars.mileage %>">
+<br>
+<label for="registration_year">Registration Year:</label>
+<input type="text" name="registration_year" value="<%= @cars.registration_year %>">
+<br>
+<label for="daily_rental_rate">Daily Rental Rate:</label>
+<input type="text" name="daily_rental_rate" value="<%= @cars.daily_rental_rate %>">
+<br>
+<label for="rented">Rented:</label>
+<input type="text" name="rented" value="<%= @cars.rented %>">
+<br>
+<label for="car_image">Car Image URL:</label>
+<input type="text" name="car_image" value="<%= @cars.car_image %>">
+<br>
+  <input type="submit" value="Save car">
+</form>
