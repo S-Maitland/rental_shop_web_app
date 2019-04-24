@@ -1,7 +1,6 @@
 require('sinatra')
 require('sinatra/contrib/all') if development?
 require_relative('../models/car.rb')
-also_reload('../models/*')
 
 get '/cars' do
   @cars = Car.all()

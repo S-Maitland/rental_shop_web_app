@@ -3,7 +3,6 @@ require('sinatra/contrib/all') if development?
 require_relative('../models/rental.rb')
 require_relative('../models/customer.rb')
 require_relative('../models/car.rb')
-also_reload('../rentals/*')
 
 get '/rentals' do
   @rentals = Rental.all()
