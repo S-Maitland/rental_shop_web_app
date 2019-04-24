@@ -1,25 +1,62 @@
 <form action="/cars/<%= @cars.id %>" method="post">
-<br>
-  <label for="manufacturer">Manufacturer:</label>
-  <input type="text" name="manufacturer" value="<%= @cars.manufacturer %>">
-<br>
-  <label for="model">Model:</label>
-  <input type="text" name="model" value="<%= @cars.model %>">
-<br>
-  <label for="mileage">Mileage:</label>
-  <input type="number" name="mileage" value="<%= @cars.mileage %>">
-<br>
-<label for="registration_year">Registration Year:</label>
-<input type="text" name="registration_year" value="<%= @cars.registration_year %>">
-<br>
-<label for="daily_rental_rate">Daily Rental Rate:</label>
-<input type="text" name="daily_rental_rate" value="<%= @cars.daily_rental_rate %>">
-<br>
-<label for="rented">Rented:</label>
-<input type="text" name="rented" value="<%= @cars.rented %>">
-<br>
-<label for="car_image">Car Image URL:</label>
-<input type="text" name="car_image" value="<%= @cars.car_image %>">
-<br>
-  <input type="submit" value="Save car">
+  <table class="form_table">
+    <tr>
+      <td>
+        <label for="manufacturer">Manufacturer:</label>
+      </td>
+      <td>
+        <input type="text" name="manufacturer" value="<%= @cars.manufacturer %>">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label for="model">Model:</label>
+      </td>
+      <td>
+        <input type="text" name="model" value="<%= @cars.model %>">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label for="mileage">Mileage:</label>
+      </td>
+      <td>
+        <input type="number" name="mileage" value="<%= @cars.mileage %>">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label for="registration_year">Registration Year:</label>
+      </td>
+      <td>
+        <input type="text" name="registration_year" value="<%= @cars.registration_year %>">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label for="daily_rental_rate">Daily Rental Rate:</label>
+      </td>
+      <td>
+        <input type="text" name="daily_rental_rate" value="<%= @cars.daily_rental_rate %>">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label for="rented">Rented:</label>
+      </td>
+      <td>
+        <input type="text" name="rented" value="<%=@cars.rented %>">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label for="car_image">Car Image URL:</label>
+      </td>
+      <td>
+        <input type="text" name="car_image" value="<%= @cars.car_image %>">
+      </td>
+    </tr>
+  </table>
+  <br>
+  <input type="submit" class="button" value="Save car">
 </form>

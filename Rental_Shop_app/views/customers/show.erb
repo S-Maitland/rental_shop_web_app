@@ -5,8 +5,8 @@
 <p>Age: <%= @customer.age %> </p>
 <hr>
 
-<p> <a href="/customers/<%= @customer.id %>/edit">Edit Customer</a> </p>
+<p> <a href="/customers/<%= @customer.id %>/edit" class="button">Edit Customer</a> </p>
 
 <form action="/customers/<%= @customer.id %>/delete" method="POST">
-  <input type="submit" name="delete" value="Delete Customer">
+  <input type="submit" class="button" name="delete" value="Delete Customer">
 </form>

@@ -1,4 +1,4 @@
-<h1>Edit properties for <%= @cars.model %></h1>
+<h1>Car info for <%= @cars.model %></h1>
 
 <p>Manufacturer: <%= @cars.manufacturer %> </p>
 <p>Model: <%= @cars.model%> </p>
@@ -9,8 +9,8 @@
 <p> <img src="<%= @cars.car_image %>"> </p>
 <hr>
 
-<p> <a href="/cars/<%= @cars.id %>/edit">Edit Car</a> </p>
+<p> <a href="/cars/<%= @cars.id %>/edit" class="button">Edit Car</a> </p>
 
 <form action="/cars/<%= @cars.id %>/delete" method="POST">
-  <input type="submit" name="delete" value="Delete Car">
+  <input type="submit" class="button" name="delete" value="Delete Car">
 </form>

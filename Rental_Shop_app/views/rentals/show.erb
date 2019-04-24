@@ -4,8 +4,8 @@
 <p>Car: <%= @car.manufacturer %> - <%= @car.model %> </p>
 <hr>
 
-<p> <a href="/rentals/<%= @rental.id %>/edit">Edit Rental</a> </p>
+<p> <a href="/rentals/<%= @rental.id %>/edit" class="button">Edit Rental</a> </p>
 
 <form action="/rentals/<%= @rental.id %>/delete" method="POST">
-  <input type="submit" name="delete" value="Delete Rental">
+  <input type="submit" class="button" name="delete" value="Delete Rental">
 </form>

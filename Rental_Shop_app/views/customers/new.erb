@@ -1,13 +1,32 @@
 <form action="/customers" method="post">
 
-  <label for="first_name">First Name:</label>
-  <input type="text" name="first_name" value="">
+  <table class="form_table">
+    <tr>
+      <td>
+        <label for="first_name">First Name:</label>
+      </td>
+      <td>
+        <input type="text" name="first_name" value="" placeholder="Your first name">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label for="second_name">Second Name:</label>
+      </td>
+      <td>
+        <input type="text" name="second_name" value="" placeholder="Your second name">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label for="age">Age:</label>
+      </td>
+      <td>
+        <input type="number" name="age" value="" placeholder="Your age">
+      </td>
+    </tr>
+  </table>
 
-  <label for="second_name">Second Name:</label>
-  <input type="text" name="second_name" value="">
+  <input type="submit" class="button" value="Add New Customer">
 
-  <label for="age">Age:</label>
-  <input type="number" name="age" value="">
-
-  <input type="submit" value="Add New Customer">
 </form>

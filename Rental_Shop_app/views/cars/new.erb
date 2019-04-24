@@ -1,22 +1,56 @@
 <form action="/cars" method="post">
 
-  <label for="manufacturer">Manufacturer:</label>
-  <input type="text" name="manufacturer" value="">
+  <table class="form_table">
+    <tr>
+      <td>
+        <label for="manufacturer">Manufacturer:</label>
+      </td>
+      <td>
+        <input type="text" name="manufacturer.." value="" placeholder="Manufacturer">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label for="model">Model:</label>
+      </td>
+      <td>
+        <input type="text" name="model" value="" placeholder="Model..">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label for="mileage">Mileage:</label>
+      </td>
+      <td>
+        <input type="number" name="mileage" value="" placeholder="mileage..">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label for="registration_year">Registration Year:</label>
+      </td>
+      <td>
+        <input type="number" name="registration_year" value=""  placeholder="registeration year..">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label for="daily_rental_rate">Daily Rental Rate:</label>
+      </td>
+      <td>
+        <input type="number" name="daily_rental_rate" value="" placeholder="daily rental rate..">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label for="rented">Rented:</label>
+      </td>
+      <td>
+        <input type="boolean" name="rented" value="" placeholder="rented..">
+      </td>
+    </tr>
+  </table>
+  <br>
+  <input type="submit" class="button" value="Add New Car">
 
-  <label for="model">Model:</label>
-  <input type="text" name="model" value="">
-
-  <label for="mileage">Mileage:</label>
-  <input type="number" name="mileage" value="">
-
-  <label for="registration_year">Registration Year:</label>
-  <input type="number" name="registration_year" value="">
-
-  <label for="daily_rental_rate">Daily Rental Rate:</label>
-  <input type="number" name="daily_rental_rate" value="">
-
-  <label for="rented">Rented:</label>
-  <input type="boolean" name="rented" value="">
-
-  <input type="submit" value="Add New Car">
 </form>

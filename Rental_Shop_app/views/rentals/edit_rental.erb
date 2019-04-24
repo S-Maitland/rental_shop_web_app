@@ -1,15 +1,15 @@
 <form action="/rentals/<%= @rental.id %>" method="post">
 
 
-  <select name="customer_id" id="customers">
-    <option selected="selected" selection disabled><%= @customer.first_name %> <%= @customer.second_name %></option>
+  <select name="customer_id" id="customers" require>
+    <option selected="selected" selected disabled><%= @customer.first_name %> <%= @customer.second_name %></option>
     <% @customers.each do |customer| %>
       <option value="<%= customer.id%>"><%= customer.first_name %> <%= customer.second_name %></option>
     <% end %>
   </select>
 
-  <select name="car_id" id="cars">
-    <option selected="selected" selection disabled><%= @car.manufacturer %> - <%= @car.model %></option>
+  <select name="car_id" id="cars" require>
+    <option selected="selected" selected disabled><%= @car.manufacturer %> - <%= @car.model %></option>
     <% @cars.each do |car| %>
       <% if car.rented != "t" %>
         <option value="<%= car.id%>"> <%= car.manufacturer %> - <%= car.model %></option>
@@ -18,5 +18,5 @@
   </select>
 
 
-  <input type="submit" value="Save Rental">
+  <input type="submit" class="button" value="Save Rental">
 </form>

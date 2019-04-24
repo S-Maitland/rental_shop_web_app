@@ -1,5 +1,5 @@
 require('sinatra')
-require('sinatra/contrib/all')
+require('sinatra/contrib/all') if development?
 require_relative('../models/rental.rb')
 require_relative('../models/customer.rb')
 require_relative('../models/car.rb')
@@ -46,8 +46,7 @@ get '/rentals/:id/edit' do
 end
 
 post '/rentals/:id/delete' do
-  @car = Car.find(params[:id].to_i)
-  @car.return_rental
+  Car.find(params[:car_id].to_i).return_rental
   Rental.delete(params[:id].to_i)
   redirect '/rentals'
 end

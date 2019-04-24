@@ -1,13 +1,31 @@
 <form action="/customers/<%= @customer.id %>" method="post">
+<table class="form_table">
+  <tr>
+    <td>
+      <label for="first_name">First Name:</label>
+    </td>
+    <td>
+      <input type="text" name="first_name" value="<%= @customer.first_name %>">
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <label for="second_name">Second Name:</label>
+    </td>
+    <td>
+      <input type="text" name="second_name" value="<%= @customer.second_name %>">
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <label for="age">Age:</label>
+    </td>
+    <td>
+      <input type="number" name="age" value="<%= @customer.age %>">
+    </td>
+  </tr>
+</table>
 <br>
-  <label for="first_name">First Name:</label>
-  <input type="text" name="first_name" value="<%= @customer.first_name %>">
-<br>
-  <label for="second_name">Second Name:</label>
-  <input type="text" name="second_name" value="<%= @customer.second_name %>">
-<br>
-  <label for="age">Age:</label>
-  <input type="number" name="age" value="<%= @customer.age %>">
-<br>
-  <input type="submit" value="Save Customer">
+<input type="submit" class="button" value="Save Customer">
+
 </form>

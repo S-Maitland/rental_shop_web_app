@@ -1,4 +1,3 @@
-require('pry-byebug')
 require_relative('../models/customer.rb')
 require_relative('../models/car.rb')
 #seed database with customers
@@ -104,6 +103,3 @@ car7 = Car.new({
 'car_image' => '/images/ghibli.jpeg'
   })
 car7.save()
-
-binding.pry
-nil

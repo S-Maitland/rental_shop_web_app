@@ -2,7 +2,7 @@
 <h1>Codeclan's Car Base</h1>
 <p>Below is a list of all the entries to your cars database.</p>
 
-<a href="/cars/new">New Car</a>
+<a href="/cars/new" class="button">New Car</a>
 
 <table class="cars_table">
     <tr>
@@ -24,7 +24,7 @@
   <td><%= car.registration_year %></td>
   <td><%= car.daily_rental_rate %></td>
   <td><%= car.rented %></td>
-  <td><a href="/cars/<%= car.id %>">View Car</a></td>
+  <td><a href="/cars/<%= car.id %>" class="button">View Car</a></td>
 </tr>
 <% end %>
 </table>
