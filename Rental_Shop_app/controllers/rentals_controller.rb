@@ -41,7 +41,7 @@ get '/rentals/:id/edit' do
 end
 
 post '/rentals/:id/delete' do
-  Car.find(params[:car_id].to_i).return_rental
+  Car.find(params[:id].to_i).return_rental
   Rental.delete(params[:id].to_i)
   redirect '/rentals'
 end
