@@ -7,12 +7,16 @@
 <table class="rentals_table">
   <tr>
     <th>Rental ID</th>
+    <th>Customer</th>
+    <th>Car</th>
   </tr>
 
   <tr>
-  <%@rentals.each do |rental|%>
-  <td><%= rental.id %></td>
-  <td><a href="/rentals/<%= rental.id %>" class="button">View Rental</a></td>
-</tr>
-<% end %>
+    <%@rentals.each do |rental|%>
+    <td><%= rental.id %></td>
+    <td><%= rental.return_customer.first_name%> <%= rental.return_customer.second_name %><td>
+    <td><%= rental.return_car.manufacturer%> - <%= rental.return_car.model %><td>
+    <a href="/rentals/<%= rental.id %>" class="button">View Rental</a></td>
+  </tr>
+  <% end %>
 </table>

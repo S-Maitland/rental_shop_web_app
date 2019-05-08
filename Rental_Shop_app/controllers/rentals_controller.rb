@@ -36,11 +36,7 @@ get '/rentals/:id' do
 end
 
 get '/rentals/:id/edit' do
-  @customers = Customer.all()
-  @cars = Car.all()
   @rental = Rental.find(params[:id].to_i)
-  @customer = @rental.return_customer
-  @car = @rental.return_car
   erb(:"rentals/edit_rental")
 end
 

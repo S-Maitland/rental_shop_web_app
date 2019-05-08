@@ -13,12 +13,12 @@
   </tr>
 
   <tr>
-  <%@customers.each do |customer|%>
-  <td><%= customer.id %> </td>
-  <td><%= customer.first_name %></td>
-  <td><%= customer.second_name %></td>
-  <td><%= customer.age %></td>
-  <td><a href="/customers/<%= customer.id %>" class="button">View Customer</a></td>
-</tr>
-<% end %>
+    <%@customers.each do |customer|%>
+    <td><%= customer.id %> </td>
+    <td><%= customer.first_name %></td>
+    <td><%= customer.second_name %></td>
+    <td><%= customer.age %></td>
+    <td><a href="/customers/<%= customer.id %>" class="button">View Customer</a></td>
+  </tr>
+  <% end %>
 </table>

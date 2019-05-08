@@ -73,4 +73,6 @@ class Rental
     return Customer.new(hash)
   end
 
+  # rental.return_customer.first_name
+
 end
