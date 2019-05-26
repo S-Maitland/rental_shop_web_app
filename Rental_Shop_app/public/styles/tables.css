@@ -2,14 +2,14 @@ table {
   border-collapse: collapse;
 }
 
-th{
+th {
   background-color: #4CAF50;
   color: white;
   text-align: center;
   padding: 5px;
 }
 
-td{
+td {
   text-align: center;
 }
 
@@ -20,4 +20,12 @@ th, td {
 
 .form_table {
   text-align: center;
+}
+
+.topGear-twitter {
+  width: 33%;
+}
+
+.theGrandtour-twitter {
+  width: 33%;
 }

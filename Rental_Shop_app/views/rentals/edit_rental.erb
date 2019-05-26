@@ -3,7 +3,7 @@
 
   <select name="customer_id" id="customers" require>
     <option selected="selected" selected disabled><%= @customer.first_name %> <%= @customer.second_name %></option>
-    <% @customers.each do |customer| %>
+    <% @customer.each do |customer| %>
       <option value="<%= customer.id%>"><%= customer.first_name %> <%= customer.second_name %></option>
     <% end %>
   </select>

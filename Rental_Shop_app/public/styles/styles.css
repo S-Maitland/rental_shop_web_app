@@ -1,5 +1,5 @@
 body {
-  background-color: #F0F8FF;
+  background-color: #ecf0f1;
   margin: 50px 0 0 0;
 }
 
@@ -44,4 +44,19 @@ li a {
 
 li a:hover {
   background-color: #4CAF50;
+}
+
+.twitter-feeds{
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  justify-content: space-around;
+}
+.twitter_header, .codeclan_header{
+  display: flex;
+  justify-content: center;
+  color: #38A1F3;
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 50px;
 }

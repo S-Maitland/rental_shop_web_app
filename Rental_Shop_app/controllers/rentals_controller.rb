@@ -36,7 +36,7 @@ get '/rentals/:id' do
 end
 
 get '/rentals/:id/edit' do
-  @rental = Rental.find(params[:id].to_i)
+  @rental = Rental.find(params[:id].to_i) 
   erb(:"rentals/edit_rental")
 end
 
